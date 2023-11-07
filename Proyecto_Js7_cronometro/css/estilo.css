@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  min-height: 100vh; /* vh es la unidad de  medida de la altura */
+  min-width: 100vw; /* vw es la unidad de  medida del ancho */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(254, 216, 126);
+}
+
+.screen {
+  user-select: none; /* esta propiedad permite que el usuario no interactue con la pantalla*/
+}
+
+.container .screen {
+  height: 100px;
+  background: rgba(221, 255, 0, 0.881);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  box-shadow: 0px 0px 8px 5px rgba(221, 255, 0, 0.881);
+  border: none;
+}
+
+.container .screen span {
+  width: 100px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 550;
+  color: rgb(2, 142, 207);
+}
+
+.screen span .separador {
+  width: 10px;
+}
+
+.screen span.separador-milli,
+.screen span.millisecond {
+  color: rgba(213, 105, 255, 0.881);
+}
+
+.container .btns {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.btns button {
+  padding: 6px 16px;
+  outline: none; /*Permite no dibujer lineas*/
+  border: none;
+  margin: 0px 25px;
+  color: rgb(2, 142, 207);
+  background: #e0d9db;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 0.9rem;
+  cursor: pointer;
+  box-shadow: 3px 4px 3px 0px rgb(2, 142, 207); /*sombra desde la izquierda, sombra desde arriba, grado difuminacion, sombra pareja*/
+}
+
+.btns button.on{
+    pointer-events: none;/*btn queda deshabilitado*/
+    opacity: 0.7;/*opaca el color del btn, impresion de hundido*/
+}
+
+.container span.separador-milli{
+    width: 15px;
+    margin-right: -8px;
+   
+}
+
+.millisecond, .second, .minute, .hour{
+    margin-right:-11px; ;
+}
+
