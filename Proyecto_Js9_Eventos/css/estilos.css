@@ -120,6 +120,9 @@ form {
 .nameEvent {
   font-size: 20px;
   font-weight: bold;
+  width: 35%;
+  white-space: normal;
+  word-wrap: break-word;
 }
 
 .dateEvent {
