@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(83, 200, 220);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Verdana, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.principal {
+  display: flex;
+}
+
+p {
+  font-size: 30px;
+  font-weight: 600;
+  color: red;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.reloj {
+  display: flex;
+  flex-direction: row;
+}
+
+.item {
+  color: #fff;
+  text-align: center;
+  margin-left: 1rem;
+  width: 110px;
+  padding: 0.5rem;
+  border: 0.2rem solid #fff;
+  border-radius: 2rem;
+}
+
+.btns button {
+  margin: 5px;
+  width: 80px;
+  height: 50px;
+  border: none;
+  border-radius: 30px;
+  background-color: red;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.btns {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+.imgOff {
+  width: 550px;
+  height: 500px;
+  background-color: rgba(90, 184, 234, 0.811);
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  background-image: url("../img/papaNoel.png");
+  background-repeat: no-repeat;
+}
+
+.imgOff.on{
+  background-image: url("../img/papaNoelGif.gif");
+
+}
+
+.btns button.on{
+  pointer-events: none;
+  opacity: 0.7;
+}
