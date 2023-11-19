@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(35, 34, 34);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  transition: 0.5s;
+
+  /* actua sobre esta clase cuando sea llamada en el DOM */
+  &.toggleWhite {
+    background-color: whitesmoke;
+  }
+}
+
+/* caja de scroll del botom */
+.toggle {
+  height: 160px;
+  width: 320px;
+  position: relative;
+  background: #1b1b1b;
+  box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
+    inset 0 8px 8px rgba(0, 0, 0, 0.1), inset 0 -4px 4px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+  appearance: none;
+  border-radius: 160px;
+
+  /* actua sobre esta clase cuando sea llamada en el DOM */
+  &.toggleWhite {
+    background-color: whitesmoke;
+    box-shadow: inset 0 2px 60px rgba(0, 0, 0, 0.1),
+    inset 0 2px 8px rgba(0, 0, 0, 0.1),
+    inset 0 -4px 4px rgba(0, 0, 0, 0.1);
+
+
+    /* agrega estos estilos al botom cuando sea solictado el cambio en el DOM */
+    .circle{
+        left: 160px;
+        box-shadow: inset 0px 8px 20px rgba(0, 0, 0, 0.5),
+        inset 4px 4px rgba(255, 255, 255, 1),
+        inset -4px 4px rgba(255, 255, 255, 1);
+        background: linear-gradient(to bottom, whitesmoke, #fafafa);
+    }
+  }
+}
+
+/* espacio del coton el 'circulao' */
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 160px;
+  height: 160px;
+  content: "";
+  background: linear-gradient(to bottom, #444, #222);
+  border-radius: 50vh;
+  transition: 0.5s;
+  box-shadow: inset 0px 8px 40px rgba(0, 0, 0, 0.5),
+    inset 4px 4px rgba(255, 255, 255, 0.2),
+    inset -4px 4px rgba(255, 255, 255, 0.2);
+}
