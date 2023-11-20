@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(32, 31, 31);
+    
+}
+
+.barra{
+    background-color: #383838;
+    height: 45px;
+    width: 50%;
+    margin: 130px auto;
+    box-shadow: inset 6px 6px 12px #303030,
+    inset -6px -6px 12px #404040;
+    overflow: hidden; /* cualquier elemento que lo contenga no se muestre */
+    border: none;
+    border-radius: 20rem;
+}
+
+/* configuracion del estilo a medidad que va avanzando el progreso */
+.progress{
+    height: 100%;
+    width: 0;
+    background-color: aqua;
+    box-shadow: 0 0 10px aqua,
+    0 0 20px aqua;
+    display: block;
+    border-radius: 20rem;
+}
+
+.percentage{
+    font-size: 2.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    transform: translatey(80px);
+    color: aqua;
+}
+
+body.celebration{
+    background-image: url('../img/celebracion-gif.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
